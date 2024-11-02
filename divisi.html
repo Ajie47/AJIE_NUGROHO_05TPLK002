@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Karyawan - Sistem Informasi Manajemen Karyawan</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="TAMPILAN.css" rel="stylesheet">
+</head>
+<body>
+    <div class="d-flex" id="wrapper">
+        <!-- Sidebar -->
+        <div class="bg-primary text-white border-right" id="sidebar-wrapper" style="width: 250px;">
+            <div class="sidebar-heading d-flex align-items-center p-3">
+                <img src="WIN_20241031_16_11_57_Pro.jpg" alt="Logo" width="50" class="mr-2">
+                <span>Universitas Pamulang</span>
+            </div>
+            <div class="list-group list-group-flush">
+                <div class="p-3">
+                    <p>Welcome, Ajie Nugroho<br><small>Administrator</small></p>
+                </div>
+                <a href="dashboard.html" class="list-group-item list-group-item-action bg-primary text-white"><i class="fas fa-home mr-2"></i> Dashboard</a>
+                <p class="ml-3">DATA KARYAWAN</p>
+                <a href="karyawan.html" class="list-group-item list-group-item-action active"><i class="fas fa-users mr-2"></i> Karyawan</a>
+                <a href="jabatan.html" class="list-group-item list-group-item-action"><i class="fas fa-briefcase mr-2"></i> Jabatan</a>
+                <a href="divisi.html" class="list-group-item list-group-item-action"><i class="fas fa-building mr-2"></i> Divisi</a>
+                <p class="ml-3">MENU ABSENSI</p>
+                <a href="absensi.html" class="list-group-item list-group-item-action"><i class="fas fa-calendar-alt mr-2"></i> Absensi</a>
+                <a href="izin.html" class="list-group-item list-group-item-action"><i class="fas fa-user-clock mr-2"></i> Izin</a>
+                <a href="lembur.html" class="list-group-item list-group-item-action"><i class="fas fa-business-time mr-2"></i> Lembur</a>
+            </div>
+        </div>
+
+        <!-- Page Content -->
+        <div class="content p-4" style="flex: 1;">
+            <div class="container-fluid">
+                <h2 class="mb-4">Data Divisi</h2>
+                <div class="mb-3">
+                    <button class="btn btn-primary">+ Tambah Divisi</button>
+                </div>
+                <div class="table-responsive">
+                    <table class="table table-bordered">
+                        <thead class="thead-light">
+                            <tr>
+                                <th>No</th>
+                                <th>Kode Divisi</th>
+                                <th>Nama Divisi</th>
+                                <th>Aksi</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>DIV001</td>
+                                <td>Umum</td>
+                                <td>
+                                    <button class="btn btn-success btn-sm"><i class="fas fa-edit"></i> Edit</button>
+                                    <button class="btn btn-danger btn-sm"><i class="fas fa-trash-alt"></i> Delete</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>DIV002</td>
+                                <td>BAUK</td>
+                                <td>
+                                    <button class="btn btn-success btn-sm"><i class="fas fa-edit"></i> Edit</button>
+                                    <button class="btn btn-danger btn-sm"><i class="fas fa-trash-alt"></i> Delete</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>DIV003</td>
+                                <td>Keuangan</td>
+                                <td>
+                                    <button class="btn btn-success btn-sm"><i class="fas fa-edit"></i> Edit</button>
+                                    <button class="btn btn-danger btn-sm"><i class="fas fa-trash-alt"></i> Delete</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>DIV004</td>
+                                <td>Akademik</td>
+                                <td>
+                                    <button class="btn btn-success btn-sm"><i class="fas fa-edit"></i> Edit</button>
+                                    <button class="btn btn-danger btn-sm"><i class="fas fa-trash-alt"></i> Delete</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td>DIV005</td>
+                                <td>Teknik</td>
+                                <td>
+                                    <button class="btn btn-success btn-sm"><i class="fas fa-edit"></i> Edit</button>
+                                    <button class="btn btn-danger btn-sm"><i class="fas fa-trash-alt"></i> Delete</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>6</td>
+                                <td>DIV006</td>
+                                <td>IT Support</td>
+                                <td>
+                                    <button class="btn btn-success btn-sm"><i class="fas fa-edit"></i> Edit</button>
+                                    <button class="btn btn-danger btn-sm"><i class="fas fa-trash-alt"></i> Delete</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>7</td>
+                                <td>DIV007</td>
+                                <td>Humas</td>
+                                <td>
+                                    <button class="btn btn-success btn-sm"><i class="fas fa-edit"></i> Edit</button>
+                                    <button class="btn btn-danger btn-sm"><i class="fas fa-trash-alt"></i> Delete</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>8</td>
+                                <td>DIV008</td>
+                                <td>Perpustakaan</td>
+                                <td>
+                                    <button class="btn btn-success btn-sm"><i class="fas fa-edit"></i> Edit</button>
+                                    <button class="btn btn-danger btn-sm"><i class="fas fa-trash-alt"></i> Delete</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>9</td>
+                                <td>DIV009</td>
+                                <td>Logistik</td>
+                                <td>
+                                    <button class="btn btn-success btn-sm"><i class="fas fa-edit"></i> Edit</button>
+                                    <button class="btn btn-danger btn-sm"><i class="fas fa-trash-alt"></i> Delete</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>10</td>
+                                <td>DIV010</td>
+                                <td>Pengembangan SDM</td>
+                                <td>
+                                    <button class="btn btn-success btn-sm"><i class="fas fa-edit"></i> Edit</button>
+                                    <button class="btn btn-danger btn-sm"><i class="fas fa-trash-alt"></i> Delete</button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap and jQuery scripts -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <title>Document</title>
+</head>
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tambah Data Karyawan</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            background-color: #f9f9f9;
+        }
+        /* Gaya untuk sidebar */
+        .sidebar {
+            width: 200px;
+            padding: 15px;
+            color: white;
+        }
+        .sidebar h2 {
+            color: white;
+            font-size: 20px;
+        }
+        .sidebar a {
+            color: white;
+            text-decoration: none;
+            display: block;
+            padding: 10px;
+            margin-bottom: 5px;
+            border-radius: 4px;
+        }
+        /* Gaya untuk konten utama */
+        .content {
+            flex-grow: 1;
+            padding: 20px;
+        }
+        h1 {
+            color: #333;
+        }
+        form {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+        input[type="text"],
+        input[type="number"] {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+        .reset{
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="sidebar bg-primary">
+        <h2>Universitas Pamulang</h2>
+        <a href="/">Tambah Karyawan</a>
+        <a href="/daftar_karyawan">Daftar Karyawan</a>
+        <a href="/laporan">Laporan</a>
+        <a href="/logout">Logout</a>
+    </div>
+    <div class="content">
+        <h1>Tambah Data Karyawan</h1>
+        <form action="/tambah_karyawan" method="post">
+            <label for="nama">Nama lengkap:</label>
+            <input type="text" id="nama" name="nama" required>
+
+            <label for="jabatan">jenis kelamin:</label>
+            <input type="text" id="jabatan" name="jabatan" required>
+            <label for="gaji">Email:</label>
+            <input type="number" id="gaji" name="gaji" required step="0.01">
+            <label for="gaji">No HP:</label>
+            <input type="number" id="gaji" name="gaji" required step="0.01">
+            <label for="gaji">Alamat:</label>
+            <textarea name="Alamat" id="Alamat" rows="8" cols="130"></textarea><br>
+            <label for="jabatan">Password:</label>
+            <input type="text" id="password" name="password" required step="0.01">
+            <label for="jabatan">jabatan:</label>
+            <input type="text" placeholder="---" id="jabatan" name="jabatan" required step="0.01">
+            <label for="jabatan">divisi:</label>
+            <input type="text" placeholder="---" id="divisi" name="divisi" required step="0.01">
+
+            <button type="submit" class="btn btn-primary">Tambah Karyawan</button>
+            <button type="reset" class="btn btn-danger">Reset</button>
+        </form>
+    </div>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
+</html>

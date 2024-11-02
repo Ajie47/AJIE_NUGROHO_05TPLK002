@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Karyawan - Sistem Informasi Manajemen Karyawan</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="TAMPILAN.css" rel="stylesheet">
+</head>
+<body>
+    <div class="d-flex" id="wrapper">
+        <!-- Sidebar -->
+        <div class="bg-primary text-white border-right" id="sidebar-wrapper" style="width: 250px;">
+            <div class="sidebar-heading d-flex align-items-center p-3">
+                <img src="WIN_20241031_16_11_57_Pro.jpg" alt="Logo" width="50" class="mr-2">
+                <span>Universitas Pamulang</span>
+            </div>
+            <div class="list-group list-group-flush">
+                <div class="p-3">
+                    <p>Welcome, Ajie Nugroho<br><small>Administrator</small></p>
+                </div>
+                <a href="dashboard.html" class="list-group-item list-group-item-action bg-primary text-white"><i class="fas fa-home mr-2"></i> Dashboard</a>
+                <p class="ml-3">DATA KARYAWAN</p>
+                <a href="karyawan.html" class="list-group-item list-group-item-action"><i class="fas fa-users mr-2"></i> Karyawan</a>
+                <a href="jabatan.html" class="list-group-item list-group-item-action"><i class="fas fa-briefcase mr-2"></i> Jabatan</a>
+                <p class="ml-3">MENU ABSENSI</p>
+                <a href="absensi.html" class="list-group-item list-group-item-action active"><i class="fas fa-calendar-alt mr-2"></i> Absensi</a>
+                <a href="izin.html" class="list-group-item list-group-item-action"><i class="fas fa-user-clock mr-2"></i> Izin</a>
+                <a href="lembur.html" class="list-group-item list-group-item-action"><i class="fas fa-business-time mr-2"></i> Lembur</a>
+            </div>
+        </div>
+
+        <!-- Page Content -->
+        <div class="content p-4" style="flex: 1;">
+            <!-- Absensi Section -->
+            <div id="absensi-section" class="container-fluid mt-5" style="padding-top: 30px;">
+                <h2 class="mb-4">Daftar Hadir Karyawan</h2>
+                <div class="table-responsive">
+                    <table class="table table-bordered">
+                        <thead class="thead-light">
+                            <tr>
+                                <th>No</th>
+                                <th>Nama Karyawan</th>
+                                <th>Tanggal</th>
+                                <th>Lokasi Absensi</th>
+                                <th>Jam Masuk</th>
+                                <th>Jam Keluar</th>
+                                <th>Aksi</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>Syahrush</td>
+                                <td>2023-05-10</td>
+                                <td>Kampus Kimia</td>
+                                <td>16:21:14</td>
+                                <td>18:09:22</td>
+                                <td>
+                                    <button class="btn btn-success btn-sm"><i class="fas fa-edit"></i> Edit</button>
+                                    <button class="btn btn-danger btn-sm"><i class="fas fa-trash-alt"></i> Delete</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>Shabri</td>
+                                <td>2023-05-10</td>
+                                <td>UNPAM Viktor</td>
+                                <td>10:35:02</td>
+                                <td>10:35:02</td>
+                                <td>
+                                    <button class="btn btn-success btn-sm"><i class="fas fa-edit"></i> Edit</button>
+                                    <button class="btn btn-danger btn-sm"><i class="fas fa-trash-alt"></i> Delete</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>Ifdhal</td>
+                                <td>2023-05-10</td>
+                                <td>Kampus Kimia</td>
+                                <td>09:10:15</td>
+                                <td>17:00:10</td>
+                                <td>
+                                    <button class="btn btn-success btn-sm"><i class="fas fa-edit"></i> Edit</button>
+                                    <button class="btn btn-danger btn-sm"><i class="fas fa-trash-alt"></i> Delete</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>Rahman</td>
+                                <td>2023-05-10</td>
+                                <td>UNPAM Viktor</td>
+                                <td>08:45:00</td>
+                                <td>16:30:00</td>
+                                <td>
+                                    <button class="btn btn-success btn-sm"><i class="fas fa-edit"></i> Edit</button>
+                                    <button class="btn btn-danger btn-sm"><i class="fas fa-trash-alt"></i> Delete</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td>Chahabudin</td>
+                                <td>2023-05-10</td>
+                                <td>Kampus Kimia</td>
+                                <td>09:00:00</td>
+                                <td>17:15:00</td>
+                                <td>
+                                    <button class="btn btn-success btn-sm"><i class="fas fa-edit"></i> Edit</button>
+                                    <button class="btn btn-danger btn-sm"><i class="fas fa-trash-alt"></i> Delete</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>6</td>
+                                <td>Husein</td>
+                                <td>2023-05-10</td>
+                                <td>UNPAM Viktor</td>
+                                <td>07:50:30</td>
+                                <td>16:20:45</td>
+                                <td>
+                                    <button class="btn btn-success btn-sm"><i class="fas fa-edit"></i> Edit</button>
+                                    <button class="btn btn-danger btn-sm"><i class="fas fa-trash-alt"></i> Delete</button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap and jQuery scripts -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
